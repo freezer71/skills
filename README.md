@@ -12,28 +12,6 @@ Skills Claude Code d'expertise-métier, rédigés en français. Chaque skill est
 
 `rgpd` et `mentions-legales` fonctionnent ensemble : les mentions légales identifient l'éditeur et renvoient vers la politique de confidentialité et la gestion des cookies, qui relèvent du skill `rgpd`.
 
-## Installation
-
-Claude Code charge comme skills globaux tous les dossiers présents dans `~/.claude/skills/`. Le plus simple est d'y créer un lien symbolique vers chaque skill du dépôt : les modifications faites ici sont prises en compte sans rien copier.
-
-Pour un skill :
-
-```bash
-ln -s ~/Workspace/skills/rgpd ~/.claude/skills/rgpd
-```
-
-Pour tous les skills du dépôt (les liens déjà présents ne sont pas modifiés) :
-
-```bash
-mkdir -p ~/.claude/skills
-for d in ~/Workspace/skills/*/; do
-  n=$(basename "$d")
-  [ -f "$d/SKILL.md" ] && [ ! -e ~/.claude/skills/$n ] && ln -s "${d%/}" ~/.claude/skills/$n
-done
-```
-
-Relancer ensuite Claude Code : les skills sont lus au démarrage de la session.
-
 ## Structure d'un skill
 
 ```
@@ -58,4 +36,4 @@ nom-du-skill/
 1. Créer un dossier en slug bas de casse (`mon-skill/`), en partant de `rgpd/` comme gabarit.
 2. Écrire la `description` du frontmatter avec soin : c'est d'elle que dépend le déclenchement du skill.
 3. Rédiger les fiches `references/` et les modèles `assets/`, puis les référencer dans les tableaux de `SKILL.md`.
-4. Créer le lien symbolique dans `~/.claude/skills/` (voir [Installation](#installation)) et ajouter une ligne au tableau [Skills disponibles](#skills-disponibles).
+4. Ajouter une ligne au tableau [Skills disponibles](#skills-disponibles).
