@@ -5,12 +5,12 @@ Le compte rendu doit se **parcourir** avant de se lire. L'utilisateur est dyslex
 ## 1. Une architecture fixe
 
 - Toujours **les mêmes parties, dans le même ordre**, numérotées (voir `assets/modele-resume.md`).
-- Une partie vide tient en une ligne (« Aucune action hors des fichiers. »). Elle ne disparaît pas : l'utilisateur sait où regarder.
+- Une partie vide tient en une ligne (« Rien n'est sorti du projet. »). Elle ne disparaît pas : l'utilisateur sait où regarder.
 - Les parties sont séparées par une ligne horizontale (`---`).
 
 ## 2. Un bloc par élément
 
-- Chaque objectif, chaque point d'attention, chaque action importante est un **bloc séparé**, avec son propre titre.
+- Chaque objectif, chaque manque, chaque résultat sorti du projet est un **bloc séparé**, avec son propre titre.
 - Dans des blocs de même nature, **les mêmes libellés dans le même ordre**. Ne jamais changer un libellé pour varier.
 - Un libellé par ligne, en gras, suivi de deux points.
 
@@ -38,8 +38,7 @@ Le compte rendu doit se **parcourir** avant de se lire. L'utilisateur est dyslex
 
 - **Aucun émoji**, nulle part.
 - Des **étiquettes en mots**, toujours les mêmes et toujours au même endroit :
-  - statut d'un fichier, en tête de ligne : `NOUVEAU`, `MODIFIÉ`, `SUPPRIMÉ`, `DÉPLACÉ` ;
-  - statut d'une action : `FAIT ET VÉRIFIÉ`, `FAIT, NON VÉRIFIÉ`, `ÉCHOUÉ`, `ABANDONNÉ`, `REFUSÉ`.
+  - statut d'un résultat : `ATTEINT`, `ATTEINT EN PARTIE`, `NON ATTEINT`, `NON VÉRIFIÉ`.
 
 ## 7. Longueur
 
