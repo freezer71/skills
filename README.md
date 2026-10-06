@@ -7,12 +7,13 @@ Skills Claude Code d'expertise-métier, rédigés en français. Chaque skill est
 | Skill | Domaine | Déclencheurs typiques |
 |---|---|---|
 | [`rgpd`](rgpd/SKILL.md) | RGPD, loi Informatique et Libertés, doctrine CNIL et CEPD, articulation avec l'AI Act | données personnelles, base légale, cookies, AIPD, violation de données, politique de confidentialité, DPA |
+| [`audit-rgpd`](audit-rgpd/SKILL.md) | Audit de conformité RGPD d'un site, d'une application ou d'un écosystème entier : cartographie, contrôle en ligne (traceurs, bandeau, formulaires, information), code et infrastructure, documents ; chaque risque prouvé et coté (gravité × vraisemblance, méthode CNIL) ; rapport lisible et plan d'action | audit RGPD, diagnostic, état des lieux, « mon site est-il conforme », préparer un contrôle CNIL, due diligence |
 | [`mentions-legales`](mentions-legales/SKILL.md) | Mentions légales d'un site ou d'une application (LCEN modifiée par la loi SREN, Code de commerce, Code de la consommation) | page `/mentions-legales`, éditeur, hébergeur, directeur de la publication, médiateur de la consommation |
 | [`journaliste`](journaliste/SKILL.md) | Déontologie (Charte de Munich, SNJ, CDJM, FIJ), écriture journalistique, méthode d'enquête, droit de la presse | écrire un article, vérifier une information, protéger une source, diffamation, droit de réponse |
 | [`revue-pr`](revue-pr/SKILL.md) | Revue de code d'une pull request GitHub : inventaire des nouvelles fonctionnalités par nature (points d'entrée, données, dépendances, droits), schémas des nouvelles structures de données, audit de sécurité de toute la PR, revue de code ; indépendant du langage et du framework, rapport découpé en blocs courts | commande `/revue-pr [numéro ou URL]` uniquement, pas de déclenchement automatique |
 | [`resume-travail`](resume-travail/SKILL.md) | Compte rendu, en mots simples, des résultats de la session (pas le récit du travail) : résultat et preuve par objectif, ce qui manque, ce qui est sorti du projet, où trouver le résultat, suite ; même mise en forme que `revue-pr` | commande `/resume-travail [période ou sujet]` uniquement |
 
-`rgpd` et `mentions-legales` fonctionnent ensemble : les mentions légales identifient l'éditeur et renvoient vers la politique de confidentialité et la gestion des cookies, qui relèvent du skill `rgpd`.
+`rgpd` et `mentions-legales` fonctionnent ensemble : les mentions légales identifient l'éditeur et renvoient vers la politique de confidentialité et la gestion des cookies, qui relèvent du skill `rgpd`. `audit-rgpd` s'appuie sur `rgpd` pour le fond du droit, et renvoie vers les deux pour rédiger les documents manquants.
 
 ## Structure d'un skill
 
